@@ -1,10 +1,16 @@
 import React from 'react'
 import Product from './Product'
 
-function Products({products,addToCart}) {
+function Products({allProducts,addToCart}) {
   return (
-    <div>
-      {products.map((oneProduct)=><Product key={oneProduct.id} product={oneProduct} addToCart={addToCart}/>)}
+   <div>
+      {allProducts ?
+      <div>
+        {allProducts.map((oneProduct)=><Product key={oneProduct.id} product={oneProduct} addToCart={addToCart}/>)}
+        </div> 
+        : <div>loading data</div>
+      }
+      
     </div>
   )
 }

@@ -6,12 +6,20 @@ import Header from './components/Header'
 import Cart from './components/Cart'
 
 function App() {
-  const [allProducts, setAllProducts] = useState([])
+  const [allProducts, setAllProducts] = useState(null)
 
   useEffect(() => {
-    fetch("https://shopping-k6qe.onrender.com/products/")
-    .then(response => response.json)
-    .then(json => setAllProducts(json))
+    const getProducts = async () => {
+      try {
+        await fetch("https://shopping-k6qe.onrender.com/products/")
+        .then(response => response.json)
+        .then(json => (json))
+      }
+      catch(error) {
+        console.log(error)
+      } 
+    }
+    getProducts();
   },[])
 
   const deleteFromCart = (productId) => {
@@ -24,11 +32,11 @@ function App() {
   }
 
   return (
-    <div calssName="app">
+    <div className="app">
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path="/" element={<Products addToCart={addToCart}/>}/>
+        <Route path="/" element={<Products allProducts={allProducts} addToCart={addToCart}/>}/>
         <Route path="/cart" element={<Cart deleteFromCart={deleteFromCart}/>}/>
       </Routes>
     </BrowserRouter>
