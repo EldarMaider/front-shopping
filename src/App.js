@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        await fetch("https://shopping-k6qe.onrender.com/products/")
+        await fetch("http://127.0.0.1:8000/products/")
         .then(response => response.json)
         .then(json => (json))
       }
