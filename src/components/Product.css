@@ -1,0 +1,61 @@
+.cardWrapper{
+    padding: 10px 30px;
+    width: 250px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.productButtonWrapper{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.productButton{
+    border: 0px;
+    background-color: #ffd631;
+    width: 80%;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.productButton:hover{
+    opacity: 0.5;
+    cursor:pointer
+}
+
+.productButton:disabled{
+    opacity: 0.5;
+}
+
+.productButton:disabled:hover{
+    cursor: default;
+}
+
+.cardImage{
+    width: 100%;
+    height: 125px;
+    cursor: pointer;
+}
+
+.cardImage:hover{
+    opacity: 0.5;
+}
+
+.cardMessage{
+    background-color: #dfdddd;
+    color: grey;
+    width: 80%;
+    margin: auto;
+    padding: 5px 0px;
+}
+
+.astrix{
+    color: red;
+}

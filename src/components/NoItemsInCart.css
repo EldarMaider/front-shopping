@@ -1,0 +1,29 @@
+.noItemsInCart {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.noItemsText {
+    text-align: center;
+}
+
+.noItemsLinkWrapper {
+    background-color: #ffd631;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.noItemsLink {
+    color: black;
+    text-decoration: none;
+}
+
+.noItemsLink:hover {
+    text-decoration: underline;
+}

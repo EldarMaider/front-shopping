@@ -1,0 +1,105 @@
+.navbarWrapper {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0px;
+    border-bottom: 1px solid black;
+    
+}
+
+.navbarWrapper li {
+    line-height: 40px;
+}
+
+.headerStyle{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+}
+
+.inputSearch{
+    width: 300px;
+    padding: 5px 15px;
+    margin: auto 0px;
+    height: 22px;
+    border-bottom-right-radius: 15px;
+}
+
+.inputSearch:focus{
+    outline: none;
+}
+
+.search-container {
+    position: relative;
+}
+
+.title{
+    margin: 0px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.searchIcon{
+    position: absolute;
+    color: black;
+    right: 15px;
+    top: 10px;
+    z-index: 1;
+}
+
+.navbarWrapper a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+}
+
+.navbarWrapper li:hover {
+    background-color:black;
+}
+
+.navbarWrapper li:hover a {
+    color: #ffd731;
+    display: flex;
+}
+
+.circleProducts{
+    border-radius: 50%;
+    background-color: #ffd631;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.cartStyle{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cartIconWrapper {
+    margin-top: 10px;
+}
+
+.navbarWrapper li:hover .circleProducts{
+    color: black;
+}
+
+.cartIcon{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.addProductAndCartWrapper {
+    display: flex;
+    
+}

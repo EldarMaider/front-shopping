@@ -1,0 +1,8 @@
+.cardWrapper{
+    margin: auto;
+}
+
+.productButtonWrapper{
+    display:flex;
+    flex-direction:column;
+}

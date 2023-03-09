@@ -1,0 +1,31 @@
+{
+  "products": [
+      {
+          "id": 1,
+          "name": "Iphone cover",
+          "description": "this is a great cover",
+          "price": "19.99",
+          "created": "2023-01-09",
+          "updated": "2023-01-09",
+          "image": "/images/download_1.jpg"
+      },
+      {
+          "id": 2,
+          "name": "Samsung cover",
+          "description": "this is no such a great cover",
+          "price": "9.99",
+          "created": "2023-01-09",
+          "updated": "2023-01-09",
+          "image": "/images/download_2.jpg"
+      },
+      {
+          "id": 3,
+          "name": "Xiomi cover",
+          "description": "Chinese cover",
+          "price": "2.99",
+          "created": "2023-01-16",
+          "updated": "2023-01-16",
+          "image": "/images/placeholder.png"
+      }
+  ]
+}

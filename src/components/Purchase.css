@@ -1,0 +1,10 @@
+.alertButtton-Purchase{
+    background-color: green;
+    color:white;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
